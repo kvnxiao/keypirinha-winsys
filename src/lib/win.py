@@ -66,3 +66,20 @@ def open_documents():
 
 def open_downloads():
     shell_open("shell:Downloads")
+
+
+# UWP Settings app
+def open_settings():
+    shell_open("ms-settings:")
+
+
+def open_settings_display():
+    shell_open("ms-settings:display")
+
+
+def open_settings_notification():
+    shell_open("ms-settings:notifications")
+
+
+def open_settings_battery():
+    shell_open("ms-settings:batterysaver")

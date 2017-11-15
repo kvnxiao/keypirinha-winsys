@@ -4,6 +4,7 @@ import keypirinha as kp
 
 from . import system_actions
 from . import shell_actions
+from . import settings_actions
 
 
 class WinSys(kp.Plugin):
@@ -81,7 +82,7 @@ class WinSys(kp.Plugin):
         self._actions.update(shell_actions.ShellActions(self).actions)
 
     def _init_windows_settings_actions(self):
-        pass
+        self._actions.update(settings_actions.SettingsActions(self).actions)
 
     def _cleanup(self):
         self.dbg("Cleaning up resources.")

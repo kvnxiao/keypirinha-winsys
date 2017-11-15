@@ -15,3 +15,10 @@ SHELL_LOCAL_LOW_APP_DATA = "LocalLowAppData"
 SHELL_DESKTOP = "Desktop"
 SHELL_DOWNLOADS = "Downloads"
 SHELL_DOCUMENTS = "Documents"
+
+# Settings actions
+MS_SETTINGS_OPEN_SETTINGS = "Settings Panel"
+MS_SETTINGS_SYSTEM = "System Settings"
+MS_SYSTEM_SETTINGS_DISPLAY = "Display"
+MS_SYSTEM_SETTINGS_NOTIFICATIONS = "Notification & Actions"
+MS_SYSTEM_SETTINGS_BATTERY = "Battery"
