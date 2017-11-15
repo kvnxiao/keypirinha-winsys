@@ -29,6 +29,19 @@ MS_SYSTEM_SETTINGS_BATTERY = "Battery"
 MS_DEVICE_SETTINGS_BLUETOOTH = "Bluetooth & other devices"
 MS_DEVICE_SETTINGS_PRINTERS = "Printers & Scanners"
 
+# Mobile devices panels
+MS_PHONE_SETTINGS = "Phone & mobile devices"
+
+# Personalization settings panels
+MS_PERSONALIZATION_BACKGROUND = "Background"
+MS_PERSONALIZATION_LOCKSCREEN = "Lock screen"
+
+# Account settings panel
+MS_ACCOUNT_SETTINGS = "Accounts"
+
+# Update & Security settings
+MS_UPDATE_SETTINGS = "Update & Security"
+
 # Time & Language panels
 MS_TIME_SETTINGS_TIME = "Date & Time"
 MS_TIME_SETTINGS_REGION = "Region & Language"

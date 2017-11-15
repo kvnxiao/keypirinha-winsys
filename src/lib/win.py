@@ -99,3 +99,23 @@ def open_settings_bluetooth():
 
 def open_settings_printer():
     shell_open("ms-settings:printers")
+
+
+def open_settings_phone():
+    shell_open("ms-settings:mobile-devices")
+
+
+def open_settings_background():
+    shell_open("ms-settings:personalization-background")
+
+
+def open_settings_lockscreen():
+    shell_open("ms-settings:lockscreen")
+
+
+def open_settings_accounts():
+    shell_open("ms-settings:yourinfo")
+
+
+def open_settings_update():
+    shell_open("ms-settings:windowsupdate")

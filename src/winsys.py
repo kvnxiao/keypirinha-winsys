@@ -90,4 +90,3 @@ class WinSys(kp.Plugin):
         # Cleanup icons
         for key, kpaction in self._actions.items():
             kpaction.icon_handle.free()
-

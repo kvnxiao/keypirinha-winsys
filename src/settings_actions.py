@@ -61,6 +61,30 @@ class SettingsActions(action.KPActions):
             ms_settings_func.open_settings_printer
         )
 
+        # Open Mobile Devices - Phone panel
+        self.actions[keyword.MS_PHONE_SETTINGS] = action.Action(
+            keyword.MS_PHONE_SETTINGS,
+            "Opens the mobile devices panel",
+            winsys.load_resource_image("settings_phone.png"),
+            ms_settings_func.open_settings_phone
+        )
+
+        # Open Personalization - Background
+        self.actions[keyword.MS_PERSONALIZATION_BACKGROUND] = action.Action(
+            keyword.MS_PERSONALIZATION_BACKGROUND,
+            "Opens the background personalization panel",
+            winsys.load_resource_image("settings_background.png"),
+            ms_settings_func.open_settings_background
+        )
+
+        # Open Personalization - Lockscreen
+        self.actions[keyword.MS_PERSONALIZATION_LOCKSCREEN] = action.Action(
+            keyword.MS_PERSONALIZATION_LOCKSCREEN,
+            "Opens the lock screen personalization panel",
+            winsys.load_resource_image("settings_lockscreen.png"),
+            ms_settings_func.open_settings_lockscreen
+        )
+
         # Open Time & Language - Time settings panel
         self.actions[keyword.MS_TIME_SETTINGS_TIME] = action.Action(
             keyword.MS_TIME_SETTINGS_TIME,
@@ -75,4 +99,20 @@ class SettingsActions(action.KPActions):
             "Opens the region & language panel",
             winsys.load_resource_image("settings_language.png"),
             ms_settings_func.open_settings_region
+        )
+
+        # Open Accounts panel
+        self.actions[keyword.MS_ACCOUNT_SETTINGS] = action.Action(
+            keyword.MS_ACCOUNT_SETTINGS,
+            "Opens the accounts, email, sync panel",
+            winsys.load_resource_image("settings_accounts.png"),
+            ms_settings_func.open_settings_accounts
+        )
+
+        # Open Update & Security panel
+        self.actions[keyword.MS_UPDATE_SETTINGS] = action.Action(
+            keyword.MS_UPDATE_SETTINGS,
+            "Opens the update & security panel",
+            winsys.load_resource_image("settings_update.png"),
+            ms_settings_func.open_settings_update
         )
