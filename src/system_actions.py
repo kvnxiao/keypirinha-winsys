@@ -1,6 +1,6 @@
 from . import action
 from . import keyword
-from .lib import system as sys_func
+from .lib import win as sys_func
 
 
 class SystemActions(action.KPActions):

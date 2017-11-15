@@ -3,6 +3,7 @@
 import keypirinha as kp
 
 from . import system_actions
+from . import shell_actions
 
 
 class WinSys(kp.Plugin):
@@ -79,7 +80,7 @@ class WinSys(kp.Plugin):
         self._system_actions = system_actions.SystemActions(self)
 
     def _init_windows_settings_actions(self):
-        pass
+        self._shell_actions = shell_actions.ShellActions(self)
 
     def _init_shell_actions(self):
         pass
