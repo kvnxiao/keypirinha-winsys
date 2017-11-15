@@ -83,3 +83,19 @@ def open_settings_notification():
 
 def open_settings_battery():
     shell_open("ms-settings:batterysaver")
+
+
+def open_settings_time():
+    shell_open("ms-settings:dateandtime")
+
+
+def open_settings_region():
+    shell_open("ms-settings:regionlanguage")
+
+
+def open_settings_bluetooth():
+    shell_open("ms-settings:bluetooth")
+
+
+def open_settings_printer():
+    shell_open("ms-settings:printers")
