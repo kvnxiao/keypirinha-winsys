@@ -1,7 +1,7 @@
 @echo off
 setlocal
 
-set PACKAGE_NAME=winsys
+set PACKAGE_NAME=WinSys
 set INSTALL_DIR=%APPDATA%\Keypirinha\InstalledPackages
 
 if "%1"=="" goto help
