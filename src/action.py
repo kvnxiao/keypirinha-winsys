@@ -14,7 +14,3 @@ class Action:
 class KPActions:
     actions = {}
 
-    # Cleanup icons
-    def cleanup(self):
-        for key, kpaction in self.actions.items():
-            kpaction.icon_handle.free()

@@ -9,8 +9,9 @@ SYSTEM_LOGOUT = "Logout"
 
 # Shell actions
 SHELL_OPEN_RECYCLE_BIN = "Recycle Bin"
-SHELL_APPDATA = "AppData"
-SHELL_LOCAL_APPDATA = "LocalAppData"
-SHELL_LOCALLOW_APPDATA = "LocalLowAppData"
+SHELL_APP_DATA = "AppData"
+SHELL_LOCAL_APP_DATA = "LocalAppData"
+SHELL_LOCAL_LOW_APP_DATA = "LocalLowAppData"
 SHELL_DESKTOP = "Desktop"
-
+SHELL_DOWNLOADS = "Downloads"
+SHELL_DOCUMENTS = "Documents"

@@ -12,13 +12,12 @@ class WinSys(kp.Plugin):
     shell folders and Windows Settings app
     """
 
+    _debug = True
     # Initialize
     def __init__(self):
         super().__init__()
 
-        self._system_actions = None
-        self._windows_settings_actions = None
-        self._shell_actions = None
+        self._actions = {}
 
     # Cleanup
     def __del__(self):
@@ -34,7 +33,7 @@ class WinSys(kp.Plugin):
     def on_catalog(self):
         catalog = []
 
-        for keyword, kpaction in self._system_actions.actions.items():
+        for keyword, kpaction in self._actions.items():
             self.dbg('Creating catalog item for action: ', kpaction.label)
             catalog.append(self.create_item(
                 category=kp.ItemCategory.KEYWORD,
@@ -53,7 +52,7 @@ class WinSys(kp.Plugin):
 
     def on_execute(self, item, action):
         if item and item.category() == kp.ItemCategory.KEYWORD:
-            selected_action = self._system_actions.actions[item.target()]
+            selected_action = self._actions[item.target()]
             self.dbg('Found catalog item for action:', selected_action.label)
             if selected_action:
                 selected_action.function()
@@ -77,16 +76,18 @@ class WinSys(kp.Plugin):
 
     # Private functions
     def _init_system_actions(self):
-        self._system_actions = system_actions.SystemActions(self)
-
-    def _init_windows_settings_actions(self):
-        self._shell_actions = shell_actions.ShellActions(self)
+        self._actions.update(system_actions.SystemActions(self).actions)
 
     def _init_shell_actions(self):
+        self._actions.update(shell_actions.ShellActions(self).actions)
+
+    def _init_windows_settings_actions(self):
         pass
 
     def _cleanup(self):
         self.dbg("Cleaning up resources.")
-        if self._system_actions is not None:
-            self._system_actions.cleanup()
+
+        # Cleanup icons
+        for key, kpaction in self._actions.items():
+            kpaction.icon_handle.free()
 

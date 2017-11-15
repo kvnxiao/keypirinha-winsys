@@ -7,7 +7,7 @@ CREATE_NO_WINDOW = 0x08000000
 
 
 def shell_open(location):
-    subprocess.call(["cmd", "/c", "start", location], creationflags=CREATE_NO_WINDOW)
+    subprocess.call(["cmd", "/c", "explorer", location], creationflags=CREATE_NO_WINDOW)
 
 
 # System
@@ -42,3 +42,27 @@ def shutdown():
 # Shell
 def open_recycling_bin():
     shell_open("shell:RecycleBinFolder")
+
+
+def open_appdata():
+    shell_open("shell:AppData")
+
+
+def open_local_appdata():
+    shell_open("shell:Local AppData")
+
+
+def open_locallow_appdata():
+    shell_open("shell:LocalAppDataLow")
+
+
+def open_desktop():
+    shell_open("shell:Desktop")
+
+
+def open_documents():
+    shell_open("shell:Personal")
+
+
+def open_downloads():
+    shell_open("shell:Downloads")
