@@ -12,7 +12,6 @@ class WinSys(kp.Plugin):
     shell folders and Windows Settings app
     """
 
-    _debug = True
     # Initialize
     def __init__(self):
         super().__init__()
@@ -48,7 +47,7 @@ class WinSys(kp.Plugin):
         self.set_catalog(catalog)
 
     def on_suggest(self, user_input, items_chain):
-        self.dbg(items_chain)
+        self.dbg(user_input)
 
     def on_execute(self, item, action):
         if item and item.category() == kp.ItemCategory.KEYWORD:
