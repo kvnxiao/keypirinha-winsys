@@ -15,8 +15,8 @@ https://github.com/kvnxiao/keypirinha-winsys/releases
 
 ## Install
 
-Once the `winsys.keypirinha-package` file is installed,
-move it to the `InstalledPackage` folder located at:
+Download the `WinSys.keypirinha-package` file from the release page shown above
+and move it to your `InstalledPackage` folder located at:
 
 * `Keypirinha\portable\Profile\InstalledPackages` in **Portable mode**
 * **Or** `%APPDATA%\Keypirinha\InstalledPackages` in **Installed mode** (the
