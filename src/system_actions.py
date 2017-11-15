@@ -16,7 +16,7 @@ class SystemActions(action.KPActions):
         # Lock
         self.actions[keyword.SYSTEM_LOCK] = action.Action(
             keyword.SYSTEM_LOCK,
-            "Locks the computer and brings you to the Windows Lockscreen",
+            "Locks the computer and brings you to the lock screen",
             winsys.load_resource_image("lock.png"),
             sys_func.lock
         )

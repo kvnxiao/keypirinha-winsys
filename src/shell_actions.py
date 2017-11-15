@@ -48,7 +48,7 @@ class ShellActions(action.KPActions):
         # Downloads
         self.actions[keyword.SHELL_DOWNLOADS] = action.Action(
             keyword.SHELL_DOWNLOADS,
-            "Opens the Downloads folder",
+            "Opens the user's Downloads folder",
             winsys.load_resource_image("downloads.png"),
             shell_func.open_downloads
         )
@@ -56,7 +56,7 @@ class ShellActions(action.KPActions):
         # Documents
         self.actions[keyword.SHELL_DOCUMENTS] = action.Action(
             keyword.SHELL_DOCUMENTS,
-            "Opens the Documents folder",
+            "Opens the user's Documents folder",
             winsys.load_resource_image("documents.png"),
             shell_func.open_documents
         )

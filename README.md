@@ -26,15 +26,57 @@ and move it to your `InstalledPackage` folder located at:
 
 ## Usage
 
-Type in the list of keywords to activate the corresponding function:
+Type in a valid keyword to activate the corresponding function:
+
+**System Actions**
 
 |  Keyword |  Description |
 |----------|--------------|
-|          |              |
+|Lock|Locks the computer and brings you to the lock screen|
+|Shutdown|Shuts down the computer|
+|Restart|Restarts the computer|
+|Hibernate|Puts the computer into hibernate mode|
+|Sleep|Puts the computer to sleep|
+|Logout|Logs out the current user|
+|Empty Recycle Bin|Empty the Recycle Bin|
+
+**Explorer Shell Shortcuts**
+
+|  Keyword |  Description |
+|----------|--------------|
+|Recycle Bin|Opens the Recycle Bin folder|
+|AppData|Opens the user's AppData folder|
+|LocalAppData|Opens the user's AppData/Local folder|
+|LocalLowAppData|Opens the user's AppData/LocalLow folder|
+|Desktop|Opens the user's Desktop folder|
+|Downloads|Opens the user's Downloads folder|
+|Documents|Opens the user's Documents folder|
+
+**Windows Settings Shortcuts (Win10 only)**
+
+|  Keyword |  Description |
+|----------|--------------|
+|Settings Panel|Opens the Settings application|
+|System Settings|Opens the system settings panel|
+|Display|Opens the display settings panel|
+|Notification & Actions|Opens the notification & actions panel|
+|Battery|Opens the battery settings panel|
+|Bluetooth & other devices|Opens the Bluetooth & other devices panel|
+|Printers & Scanners|Opens the printers & scanners panel|
+|Phone & mobile devices|Opens the mobile devices panel|
+|Background|Opens the background personalization panel|
+|Lock screen|Opens the lock screen personalization panel|
+|Date & Time|Opens the date & time panel|
+|Region & Language|Opens the region & language panel|
+|Accounts|Opens the accounts, email, sync panel|
+|Update & Security|Opens the update & security panel|
+
 
 ## Change Log
 
-**TBD**
+**1.0.0 - Initial Release**
+ - Initial release of the plugin which contains system actions,
+  explorer shell shortcuts, and windows settings shortcuts for Windows 10
 
 
 ## License
