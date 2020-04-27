@@ -68,6 +68,10 @@ def open_downloads():
     shell_open("shell:Downloads")
 
 
+def open_startup():
+    shell_open("shell:Startup")
+
+
 # UWP Settings app
 def open_settings():
     shell_open("ms-settings:")

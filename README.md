@@ -51,6 +51,7 @@ Type in a valid keyword to activate the corresponding function:
 |Desktop|Opens the user's Desktop folder|
 |Downloads|Opens the user's Downloads folder|
 |Documents|Opens the user's Documents folder|
+|Startup|Opens the user's Startup folder|
 
 **Windows Settings Shortcuts (Win10 only)**
 
@@ -73,6 +74,9 @@ Type in a valid keyword to activate the corresponding function:
 
 
 ## Change Log
+
+**1.0.1**
+- Added `Startup` keyword as a shell command to open the user's startup menu folder
 
 **1.0.0 - Initial Release**
  - Initial release of the plugin which contains system actions,

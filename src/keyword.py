@@ -15,6 +15,7 @@ SHELL_LOCAL_LOW_APP_DATA = "LocalLowAppData"
 SHELL_DESKTOP = "Desktop"
 SHELL_DOWNLOADS = "Downloads"
 SHELL_DOCUMENTS = "Documents"
+SHELL_STARTUP = "Startup"
 
 # Settings app actions
 MS_SETTINGS_OPEN_SETTINGS = "Settings Panel"

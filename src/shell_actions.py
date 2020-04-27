@@ -60,3 +60,11 @@ class ShellActions(action.KPActions):
             winsys.load_resource_image("documents.png"),
             shell_func.open_documents
         )
+
+        # Documents
+        self.actions[keyword.SHELL_STARTUP] = action.Action(
+            keyword.SHELL_STARTUP,
+            "Opens the user's Startup folder",
+            winsys.load_resource_image("startup.png"),
+            shell_func.open_startup
+        )
