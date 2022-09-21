@@ -1,5 +1,9 @@
 # Keypirinha Plugin: WinSys
 
+_**NOTICE:**_ This repository has been publicly archived. This plugin is still available for download and use, but there will be no more future updates to this plugin (feel free to fork it and apply your own changes in your own fork). For alternatives and up to date solutions, consider using Microsoft's PowerToys Run: https://learn.microsoft.com/en-us/windows/powertoys/run instead, which has better system integration on Windows.
+
+_____________
+
 A useful [Keypirinha](http://keypirinha.com) plugin with common system and shell commands for Windows 10.
 
 Provides  keywords for system command features such as shutdown, locking the computer,
